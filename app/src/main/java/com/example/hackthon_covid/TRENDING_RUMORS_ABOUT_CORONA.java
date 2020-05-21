@@ -62,11 +62,5 @@ ImageView i;
 
 
     }
-    public void click(View view)
-    {
-        i = findViewById(R.id.imageView);
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.businessinsider.in/science/health/news/coronavirus-dos-and-donts-for-protection-against-convid-19/articleshow/74475858.cms"));
-        startActivity(intent);
 
-    }
 }

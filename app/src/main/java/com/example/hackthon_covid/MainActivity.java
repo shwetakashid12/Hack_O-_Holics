@@ -13,12 +13,25 @@ public class MainActivity extends AppCompatActivity {
     Button b1, b3, b4;
     ViewFlipper v_flip;
   ImageView b2;
+  Button one;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         v_flip = findViewById(R.id.a);
+
+        one=findViewById(R.id.count);
+        one.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,count_start.class);
+                startActivity(intent);
+            }
+        });
+
 
         int img1[] = {R.drawable.mask, R.drawable.sanitize, R.drawable.soap, R.drawable.wash_hands, R.drawable.handshake, R.drawable.social_distancing};
 

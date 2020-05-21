@@ -5,16 +5,29 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingTop="30dp"
+    android:paddingRight="20dp"
 tools:context=".MainActivity">
 
 
     <ViewFlipper
         android:id="@+id/a"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="247dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+
+        android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
         android:layout_marginTop="9dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
         android:gravity="center"
         android:text="view">
 
@@ -30,6 +43,8 @@ tools:context=".MainActivity">
     android:layout_marginBottom="10dp"
 
 
+
+
     android:alignmentMode="alignMargins"
     android:columnCount="2"
     android:padding="10dp"
@@ -37,7 +52,7 @@ tools:context=".MainActivity">
 
 
     <Button
-        android:id="@+id/chatbot"
+        android:id="@+id/count"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerVertical="true"
