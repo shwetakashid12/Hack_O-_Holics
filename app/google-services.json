@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1033960782303",
+    "firebase_url": "https://covidlogin.firebaseio.com",
+    "project_id": "covidlogin",
+    "storage_bucket": "covidlogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033960782303:android:87fc4367cad8bb6c23ac6a",
+        "android_client_info": {
+          "package_name": "com.example.hackthon_covid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1033960782303-7t3fsl8jnfugn1jujrkmhqkne612hhqm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG-m-P8wfy7oD2kZsUacAD5KJMOS1NJes"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1033960782303-7t3fsl8jnfugn1jujrkmhqkne612hhqm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

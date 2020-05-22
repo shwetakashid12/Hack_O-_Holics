@@ -7,7 +7,10 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 
 tools:context=".MainActivity">
-
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/app_bar"/>
 
 
     <ViewFlipper
@@ -22,90 +25,88 @@ tools:context=".MainActivity">
 
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="0dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
         android:gravity="center"
         android:text="view">
 
     </ViewFlipper>
 
     <GridLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_below="@+id/a"
-    android:layout_marginLeft="10dp"
-    android:layout_marginTop="5dp"
-    android:layout_marginRight="10dp"
-    android:layout_marginBottom="10dp"
+        android:layout_width="401dp"
+        android:layout_height="366dp"
+        android:layout_below="@+id/a"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
 
 
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:padding="10dp"
+        android:rowCount="2">
 
 
-    android:alignmentMode="alignMargins"
-    android:columnCount="2"
-    android:padding="10dp"
-    android:rowCount="2">
+        <Button
+            android:id="@+id/count"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
 
 
-    <Button
-        android:id="@+id/count"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_centerVertical="true"
-        android:clickable="true"
+            android:layout_marginTop="2dp"
+            android:clickable="true"
+            android:text="Tap" />
+
+        <ImageView
+            android:id="@+id/News"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
 
 
-        android:layout_marginLeft="5dp"
-        android:text="Tap"
-        android:layout_marginTop="2dp"
-         />
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="6dp"
+            android:clickable="true"
+            android:onClick="new_act"
+            android:text="Tap"
+            app:srcCompat="@drawable/rumor"
+            tools:srcCompat="@drawable/rumor" />
 
-    <ImageView
-        android:id="@+id/News"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        <Button
+            android:id="@+id/Stress"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
 
-
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="6dp"
-        android:clickable="true"
-        android:onClick="new_act"
-        android:text="Tap"
-        app:srcCompat="@drawable/rumor"
-        tools:srcCompat="@drawable/rumor" />
-
-    <Button
-        android:id="@+id/Stress"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_centerVertical="true"
-        android:clickable="true"
-
-        android:layout_marginLeft="5dp"
-        android:text="Stress Managment"
-        android:layout_marginTop="25dp"
-        />
+            android:layout_marginTop="25dp"
+            android:clickable="true"
+            android:text="Stress Managment" />
 
 
-    <Button
-        android:id="@+id/Helpline"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_centerVertical="true"
-        android:clickable="true"
+        <Button
+            android:id="@+id/Helpline"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
 
-        android:layout_marginLeft="25dp"
-        android:text="HelpLine"
-        android:layout_marginTop="35dp"
-        />
-
+            android:layout_marginTop="35dp"
+            android:clickable="true"
+            android:text="HelpLine" />
 
 
-</GridLayout>
+    </GridLayout>
+
+
+    />
+
 
 
 </RelativeLayout>

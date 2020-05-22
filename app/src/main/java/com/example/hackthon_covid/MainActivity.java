@@ -1,15 +1,23 @@
 package com.example.hackthon_covid;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 public class MainActivity extends AppCompatActivity {
+
     Button b1, b3, b4;
     ViewFlipper v_flip;
   ImageView b2;
@@ -17,11 +25,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         v_flip = findViewById(R.id.a);
+
+
+
 
         one=findViewById(R.id.count);
         one.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 
     public void Slideimgs(int image) {
         ImageView imageView = new ImageView(this);

@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class login extends AppCompatActivity {
 
@@ -42,11 +43,28 @@ public class login extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id=item.getItemId();
-
-                if(id==R.id.db)
+                if(id==R.id.sign_up)
                 {
-                    Intent intent=new Intent(login.this,MainActivity.class);
+                    Intent intent=new Intent(login.this,fire_mainscreen.class);
                     startActivity(intent);
+
+                }
+
+                if(id==R.id.lg)
+                {
+                    Intent intent=new Intent(login.this,fire_login.class);
+                    startActivity(intent);
+
+                }
+
+                if(id==R.id.logout)
+                {
+//                    Intent intent=new Intent(login.this,fire_logout.class);
+//                    startActivity(intent);
+                    FirebaseAuth.getInstance().signOut();
+                    Intent intToMain = new Intent(login.this, fire_login.class);
+                    startActivity(intToMain);
+
                 }
 
 

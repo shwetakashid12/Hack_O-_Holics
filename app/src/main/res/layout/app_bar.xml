@@ -7,10 +7,11 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:id="@+id/toolBar"
-        app:title="Mytoolbar"
+        app:title="Covid-19"
         app:titleTextColor="@color/white"
         android:elevation="3dp"
         android:background="@drawable/toolbar_style"
+
         android:layout_margin="4dp"/>
     <FrameLayout
         android:layout_width="match_parent"

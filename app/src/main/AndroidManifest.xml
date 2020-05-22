@@ -11,20 +11,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".fire_logout" />
+        <activity android:name=".fire_login" />
+        <activity android:name=".fire_mainscreen" />
         <activity android:name=".login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".count_start"></activity>
+        <activity android:name=".count_start" />
         <activity android:name=".TRENDING_RUMORS_ABOUT_CORONA" />
         <activity android:name=".HelpLine_No" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".AffectedCountries" />
         <activity android:name=".DetailActivity" />
     </application>
