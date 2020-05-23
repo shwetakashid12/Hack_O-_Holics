@@ -10,9 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_margin="4dp"
-        android:background="#7EF8B4B4"
+        android:background="@drawable/toolbar_style"
         android:elevation="3dp"
         app:title="Covid-19 Guide"
+
         android:fontFamily="sans-serif-condensed-medium"
 
         app:titleTextColor="@color/color_one" />
@@ -29,11 +30,11 @@
             android:layout_marginLeft="0dp"
             android:layout_marginTop="60dp"
             android:layout_marginRight="0dp"
-            android:background="#7EF8B4B4"
+            android:background="@color/color_two"
 
             android:fontFamily="sans-serif-condensed-medium"
             android:src="@drawable/stay"
-android:text="\n\n            STAY\n            HOME\n\n            STAY\n            SAFE\n\n            STAY\n        INFORMED"
+            android:text="\n\n            STAY\n            HOME\n\n            STAY\n            SAFE\n\n            STAY\n        INFORMED"
             android:textColor="@color/color_one"
             android:textSize="45dp">
 

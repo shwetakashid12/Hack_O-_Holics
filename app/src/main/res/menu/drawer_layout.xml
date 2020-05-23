@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/sign_up"
-        android:icon="@drawable/signup"
+
         android:title="Signup"
         />
     <item android:id="@+id/lg"
-        android:icon="@drawable/login_img"
+
         android:title="Login"
         />
 
@@ -15,7 +15,7 @@
         android:title="Logout" />
     <item android:id="@+id/feedback"
 
-        android:icon="@drawable/ic_feedback"
+
         android:title="Feedback" />
 
 

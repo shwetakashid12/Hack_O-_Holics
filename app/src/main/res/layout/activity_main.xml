@@ -4,12 +4,22 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
+
 android:orientation="vertical"
     tools:context=".MainActivity"
 
     >
 
-
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Dashboard"
+    android:textStyle="bold"
+    android:textSize="30sp"
+    android:paddingLeft="120dp"
+    android:paddingTop="10dp"
+    android:textColor="@color/cardview_dark_background"
+    />
 
     <ViewFlipper
         android:id="@+id/a"
@@ -34,6 +44,7 @@ android:orientation="vertical"
     </ViewFlipper>
 
     <GridLayout
+        android:elevation="20dp"
         android:layout_width="401dp"
         android:layout_height="366dp"
         android:layout_below="@+id/a"
@@ -101,6 +112,7 @@ android:orientation="vertical"
             android:clickable="true"
 
 
+
             />
         <Button
             android:id="@+id/btn_bk"
@@ -110,7 +122,7 @@ android:orientation="vertical"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="35dp"
             android:clickable="true"
-            android:text="BACK"
+            android:text="Logout"
             />
 
 
