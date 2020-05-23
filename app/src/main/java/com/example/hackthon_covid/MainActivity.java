@@ -13,15 +13,17 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button b1, b3, b4;
+    Button b1, back;
     ViewFlipper v_flip;
-  ImageView b2;
-  Button one;
+
+  ImageView b2,b4;
+  ImageView one;
 
 
 
@@ -43,6 +45,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        back=findViewById(R.id.btn_bk);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,fire_mainscreen.class);
+                startActivity(intent);
+            }
+        });
+
+
+
 
 
         int img1[] = {R.drawable.mask, R.drawable.sanitize, R.drawable.soap, R.drawable.wash_hands, R.drawable.handshake, R.drawable.social_distancing};
@@ -67,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         imageView.setBackgroundResource(image);
 
         v_flip.addView(imageView);
-        v_flip.setFlipInterval(2000);
+        v_flip.setFlipInterval(3000);
         v_flip.setAutoStart(true);
     }
     public void new_act(View view){

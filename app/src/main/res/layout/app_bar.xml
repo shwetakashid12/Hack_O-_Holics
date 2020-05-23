@@ -1,22 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:id="@+id/toolBar"
-        app:title="Covid-19"
-        app:titleTextColor="@color/white"
+        android:layout_margin="4dp"
+        android:background="#7EF8B4B4"
         android:elevation="3dp"
-        android:background="@drawable/toolbar_style"
+        app:title="Covid-19 Guide"
+        android:fontFamily="sans-serif-condensed-medium"
 
-        android:layout_margin="4dp"/>
+        app:titleTextColor="@color/color_one" />
+
     <FrameLayout
+        android:id="@+id/frame_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        tools:visibility="visible">
 
-        android:id="@+id/frame_layout"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="0dp"
+            android:background="#7EF8B4B4"
+
+            android:fontFamily="sans-serif-condensed-medium"
+            android:src="@drawable/stay"
+android:text="\n\n            STAY\n            HOME\n\n            STAY\n            SAFE\n\n            STAY\n        INFORMED"
+            android:textColor="@color/color_one"
+            android:textSize="45dp">
+
+        </TextView>
+    </FrameLayout>
+    <!--android:background="#7EF8B4B4"-->
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

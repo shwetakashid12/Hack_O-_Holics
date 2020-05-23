@@ -19,7 +19,7 @@ ImageView i;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trending__rumors__about__coron);
-        listView = findViewById(R.id.list);
+    /*    listView = findViewById(R.id.list);
         ArrayList<String> arrayList = new ArrayList<>();
         arrayList.add("\n");
         arrayList.add("Claim:" +
@@ -58,7 +58,7 @@ ImageView i;
         arrayList.add("Myth : New vaccine will be available soon\n");
         arrayList.add("Myth : Corona beer causes coronavirus\n");
         ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,arrayList);
-        listView.setAdapter(arrayAdapter);
+        listView.setAdapter(arrayAdapter);*/
 
 
     }

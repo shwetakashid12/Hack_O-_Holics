@@ -5,18 +5,16 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
+    tools:context=".MainActivity"
 
-tools:context=".MainActivity">
-    <include
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        layout="@layout/app_bar"/>
+    >
+
 
 
     <ViewFlipper
         android:id="@+id/a"
         android:layout_width="match_parent"
-        android:layout_height="247dp"
+        android:layout_height="240dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -48,25 +46,26 @@ tools:context=".MainActivity">
         android:alignmentMode="alignMargins"
         android:columnCount="2"
         android:padding="10dp"
-        android:rowCount="2">
+        android:rowCount="3">
 
 
-        <Button
+        <ImageView
             android:id="@+id/count"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="5dp"
-
+            app:srcCompat="@drawable/info"
+            android:textColor="@color/color_one"
 
             android:layout_marginTop="2dp"
             android:clickable="true"
-            android:text="Tap" />
+            android:text="\n\n          Daily\n     Updates" />
 
         <ImageView
             android:id="@+id/News"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
 
 
             android:layout_centerVertical="true"
@@ -75,31 +74,44 @@ tools:context=".MainActivity">
             android:clickable="true"
             android:onClick="new_act"
             android:text="Tap"
-            app:srcCompat="@drawable/rumor"
-            tools:srcCompat="@drawable/rumor" />
+            app:srcCompat="@drawable/rumor1"
+            tools:srcCompat="@drawable/rumor1" />
 
-        <Button
+        <ImageView
             android:id="@+id/Stress"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="5dp"
+            app:srcCompat="@drawable/stress"
 
             android:layout_marginTop="25dp"
             android:clickable="true"
             android:text="Stress Managment" />
 
 
-        <Button
+        <ImageView
             android:id="@+id/Helpline"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="25dp"
-
+            app:srcCompat="@drawable/helpline"
             android:layout_marginTop="35dp"
             android:clickable="true"
-            android:text="HelpLine" />
+
+
+            />
+        <Button
+            android:id="@+id/btn_bk"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="35dp"
+            android:clickable="true"
+            android:text="BACK"
+            />
 
 
     </GridLayout>
