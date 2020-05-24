@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".stress_management">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:accessibilityHeading="true"
+        android:text="Stress Management"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"></TextView>
+
+    <ScrollView
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/sc"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textMultiLine"
+                android:text="Take care of yourself and your community.
+\n\nTaking care of yourself, your friends, and your family can help you cope with stress. Helping others cope with their stress can also make your community stronger.
+Ways to cope with stress
+\n\n• Take breaks from watching, reading, or listening to news stories, including social media. Hearing about the pandemic repeatedly can be upsetting.
+\n\n• Take care of your body.
+\n\n• Take deep breaths, stretch, or meditate.
+\n\n• Try to eat healthy, well-balanced meals.
+\n\n• Exercise regularly, get plenty of sleep.
+\n\n• Avoid alcohol and drugs.
+\n\n• Make time to unwind. Try to do some other activities you enjoy.
+\n\n• Connect with others. Talk with people you trust about your concerns and how you are feeling.
+"></TextView>
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Call for Stress Management"
+                android:textSize="30dp"
+
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
+

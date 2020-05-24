@@ -95,7 +95,7 @@ android:orientation="vertical"
             android:layout_centerVertical="true"
             android:layout_marginLeft="5dp"
             app:srcCompat="@drawable/stress"
-
+             android:onClick="get_info"
             android:layout_marginTop="25dp"
             android:clickable="true"
             android:text="Stress Managment" />

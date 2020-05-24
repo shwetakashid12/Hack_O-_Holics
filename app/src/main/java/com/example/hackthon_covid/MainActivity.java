@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     Button b1, back;
     ViewFlipper v_flip;
 
-  ImageView b2,b4;
+  ImageView b2,b4,str;
   ImageView one;
 
 
@@ -87,5 +87,10 @@ public class MainActivity extends AppCompatActivity {
         b2 = findViewById(R.id.News);
         Intent intent1 = new Intent(MainActivity.this, TRENDING_RUMORS_ABOUT_CORONA.class);
         startActivity(intent1);
+    }
+    public void get_info(View view){
+        str = findViewById(R.id.Stress);
+        Intent intent2 = new Intent(MainActivity.this,stress_management.class);
+        startActivity(intent2);
     }
 }
