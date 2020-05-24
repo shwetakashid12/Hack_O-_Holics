@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class splash extends AppCompatActivity {
 Thread object;
@@ -22,8 +23,11 @@ Thread object;
             Animation animation = AnimationUtils.loadAnimation(this,R.anim.trans);
             animation.reset();
             ImageView i = findViewById(R.id.imageView);
+            TextView t1 = findViewById(R.id.textView3);
             i.clearAnimation();
+            t1.clearAnimation();
             i.startAnimation(animation);
+            t1.startAnimation(animation);
             object = new Thread()
 
             {
